@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x86\debug\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x86\debug\static;$(DG_OPENSSL_ROOT)\msvc141\debug_x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x86\release\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x86\release\static;$(DG_OPENSSL_ROOT)\msvc141\release_x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;libthrift.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p $(DG_SIGN_CERT_PASS) /d "Data Guard" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;libthrift.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p $(DG_SIGN_CERT_PASS) /d "Data Guard" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiBanking.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiEncryption.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiFolderLock.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiSecureErase.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiServiceManager.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_types.cpp" />
+    <ClCompile Include="..\..\service\DgiService\helpers\internal\helpers.cpp" />
+    <ClCompile Include="dgui.cpp">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </ClCompile>
+    <ClCompile Include="logic\DgiEngine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="thrift_client\ThriftClientFLock.cpp" />
+    <ClCompile Include="thrift_client\ThriftClientMain.cpp" />
+    <ClCompile Include="view\auth\WgtAuth.cpp" />
+    <ClCompile Include="view\bankcards\WgtBankcards.cpp" />
+    <ClCompile Include="view\encryption\WgtEncryption.cpp" />
+    <ClCompile Include="view\flock\WgtFLock.cpp" />
+    <ClCompile Include="view\shredder\WgtShredder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="dgui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="dgui.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="dgui.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dgui.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiBanking.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiEncryption.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiFolderLock.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiSecureErase.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiServiceManager.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_types.h" />
+    <ClInclude Include="..\..\service\DgiService\helpers\internal\helpers.h" />
+    <ClInclude Include="..\..\service\DgiService\helpers\internal\log.h" />
+    <ClInclude Include="logic\DgiCommon.h" />
+    <ClInclude Include="logic\DgiEngine.h" />
+    <ClInclude Include="thrift_client\ThriftClientFLock.h" />
+    <ClInclude Include="thrift_client\ThriftClientMain.h" />
+    <ClInclude Include="thrift_client\ThriftCommon.h" />
+    <QtMoc Include="view\auth\WgtAuth.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+    <QtMoc Include="view\flock\WgtFLockContextChange.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+    <QtMoc Include="view\flock\WgtFLockContextAddNew.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+    <QtMoc Include="view\bankcards\WgtBankcards.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+    <QtMoc Include="view\encryption\WgtEncryption.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+    <QtMoc Include="view\flock\WgtFLock.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+    <QtMoc Include="view\shredder\WgtShredder.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+    <QtMoc Include="view\ExtendedTree.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="5.13" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

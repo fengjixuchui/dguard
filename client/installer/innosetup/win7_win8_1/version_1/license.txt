@@ -1,0 +1,51 @@
+Data Guard User License Agreement
+
+This End User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and NT Tree ("NTTree") for the SOFTWARE(s) identified above, which includes the User's Guide, any associated SOFTWARE components, any media, any printed materials other than the 
+User's Guide, and any "online" or electronic documentation. 
+By installing, copying, or otherwise using the SOFTWARE, you agree to be bound by the terms of this EULA. 
+If you do not agree to the terms of this EULA, do not install or use the SOFTWARE.
+
+NTTree and/or its licensors reserve All rights not expressly granted herein.
+The SOFTWARE is licensed, not sold. 
+The SOFTWARE is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. 
+
+
+GRANT OF LICENSE
+
+1) Free edition
+Free edition is NOT licensed for commercial or government use except for a 30 day evaluation period. 
+You can use the SOFTWARE as long as you wish provided that you use this software solely for personal and noncommercial use.
+
+2) Pro edition
+If technical or legal limitations of the Free edition of the SOFTWARE don't suit your requirements, you can register Pro edition of the SOFTWARE.
+Once registered, you are granted a non-exclusive license to use the SOFTWARE on as many computers as defined at the registration. 
+ 
+
+RESTRICTIONS
+
+You may not use, copy, emulate, clone, rent, lease, sell, modify,decompile, disassemble, otherwise reverse engineer, or transfer the licensed program, or any subset of the licensed program, except as provided for in this agreement.
+Any such unauthorized use shall result in immediate and automatic termination of this license and may result in criminal and/or civil prosecution.
+
+
+TERMINATION
+
+Without prejudice to any other rights, NTTree may terminate this EULA if you fail to comply with the terms and conditions of this EULA.
+In such event, you must destroy all copies of the SOFTWARE.
+
+
+NO WARRANTIES
+
+NTTree EXPRESSLY DISCLAIMS ANY WARRANTY FOR THE SOFTWARE.
+THE SOFTWARE AND ANY RELATED DOCUMENTATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED 
+WARRANTIES OR MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON INFRINGEMENT. THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF THE SOFTWARE REMAINS WITH YOU.
+
+
+LIMITATION OF LIABILITY. NO LIABILITY FOR CONSEQUENTIAL DAMAGES
+
+IN NO EVENT SHALL NTTree BE LIABLE TO YOU FOR ANY DAMAGES OF ANY KIND ARISING OUT OF THE DELIVERY, PERFORMANCE, OR USE OF THE SOFTWARE, EVEN IF NTTree HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+IN ANY EVENT, OUR LIABILITY FOR ANY CLAIM, WHETHER IN CONTRACT, TORT, OR ANY OTHER THEORY OF LIABILITY SHALL NOT EXCEED THE LICENSE FEE PAID BY YOU.
+
+
+SEVERABILITY
+
+If any provision or part of this EULA is held to be invalid, illegal or unenforceable, the validity, legality or enforceability of the remainder of this Agreement will not in any way be affected or impaired, unless the invalidity, illegality or unenforceability completely nullifies this EULA.

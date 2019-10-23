@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F998EE55-6674-443B-AD93-9EADE717138B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ServiceClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_CRYPTOPP_ROOT)\src;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x86\debug\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x86\debug\static;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(DG_OPENSSL_ROOT)\msvc141\debug_x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_ZLIB_ROOT)\sources;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x86\release\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x86\release\static;$(DG_OPENSSL_ROOT)\msvc141\release_x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libthrift.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p "$(DG_SIGN_CERT_PASS)" /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\"
+</Command>
+      <Message>Creating digital signature</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libthrift.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p $(DG_SIGN_CERT_PASS) /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Creating digital signature</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiBanking.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiEncryption.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiFolderLock.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiSecureErase.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiServiceManager.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_types.cpp" />
+    <ClCompile Include="..\DgiService\helpers\internal\helpers.cpp" />
+    <ClCompile Include="..\DgiService\logic\folderlock\driver\ClientFLockNative.cpp" />
+    <ClCompile Include="..\DgiService\stdafx.cpp" />
+    <ClCompile Include="ConsoleClient.cpp" />
+    <ClCompile Include="ConsoleClientHelp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="thrift-client\ClientCards.cpp" />
+    <ClCompile Include="thrift-client\ClientEncryption.cpp" />
+    <ClCompile Include="thrift-client\ClientFLock.cpp" />
+    <ClCompile Include="thrift-client\ClientMain.cpp" />
+    <ClCompile Include="thrift-client\ClientShredder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiBanking.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiEncryption.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiFolderLock.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiSecureErase.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiServiceManager.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_types.h" />
+    <ClInclude Include="..\DgiService\helpers\internal\helpers.h" />
+    <ClInclude Include="..\DgiService\helpers\internal\log.h" />
+    <ClInclude Include="..\DgiService\logic\folderlock\driver\ClientFLockNative.h" />
+    <ClInclude Include="..\DgiService\stdafx.h" />
+    <ClInclude Include="ServiceClient.h" />
+    <ClInclude Include="thrift-client\ClientCards.h" />
+    <ClInclude Include="thrift-client\ClientEncryption.h" />
+    <ClInclude Include="thrift-client\ClientFLock.h" />
+    <ClInclude Include="thrift-client\ClientMain.h" />
+    <ClInclude Include="thrift-client\ClientShredder.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

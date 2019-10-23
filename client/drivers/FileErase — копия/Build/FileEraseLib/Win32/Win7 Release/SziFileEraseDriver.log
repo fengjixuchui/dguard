@@ -1,0 +1,20 @@
+﻿Build started 18.04.2019 10:15:22.
+     1>Project "D:\super_product\dguard\client\drivers\FileErase\SziFileEraseLib\SziFileEraseDriver.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\Win7 Release\\" /Fd"D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\Win7 Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SziFileEraseDriver.cpp SziNamedPipe.cpp SziRecycle.cpp SziFileSearch.cpp
+         SziFileEraseDriver.cpp
+         SziNamedPipe.cpp
+         SziRecycle.cpp
+         SziFileSearch.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\\FileEraseLib.lib" /NOLOGO "D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\Win7 Release\SziFileEraseDriver.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\Win7 Release\SziNamedPipe.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\Win7 Release\SziRecycle.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\Win7 Release\SziFileSearch.obj"
+         SziFileEraseDriver.vcxproj -> D:\super_product\dguard\client\drivers\FileErase\\Build\FileEraseLib\Win32\\FileEraseLib.lib
+     1>Done Building Project "D:\super_product\dguard\client\drivers\FileErase\SziFileEraseLib\SziFileEraseDriver.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.50

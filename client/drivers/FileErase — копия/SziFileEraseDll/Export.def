@@ -1,0 +1,8 @@
+LIBRARY	"SziFileErase"
+EXPORTS
+	SziFileErase		@1
+	SziFileEraseW		@2
+    DllGetClassObject   PRIVATE
+    DllCanUnloadNow     PRIVATE
+    DllRegisterServer   PRIVATE
+    DllUnregisterServer PRIVATE

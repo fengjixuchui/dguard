@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="extern">
+      <UniqueIdentifier>{ad0d8388-d55f-45f7-936f-1b3e9aef94fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift_client">
+      <UniqueIdentifier>{16da156a-dde8-4c7d-bee4-7274a2d142fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift_client\generated">
+      <UniqueIdentifier>{1e7c9de2-d6ac-4d65-b525-9c8baede325f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view">
+      <UniqueIdentifier>{a14294bd-6a08-4236-bbc3-5ccf97b6c832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\auth">
+      <UniqueIdentifier>{5ba4c7cc-c968-4187-8409-f6ceb3db38be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\bankcards">
+      <UniqueIdentifier>{ee46c223-c412-4304-bb6c-cd76eaa34fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\encryption">
+      <UniqueIdentifier>{0bb1420a-b563-40c4-bd84-e26a85b73cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\flock">
+      <UniqueIdentifier>{171fddf5-c7f0-4f7f-8424-3492e776ad54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\options">
+      <UniqueIdentifier>{c12be048-1ae9-4847-a3e5-d441b12aeb8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\shredder">
+      <UniqueIdentifier>{a3a89663-5151-4aa2-8b3b-24cc3b26ae46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{8361fcf3-667a-4d0b-b308-2973c6f8ecec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiBanking.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiEncryption.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiFolderLock.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiSecureErase.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiServiceManager.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_constants.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_types.cpp">
+      <Filter>thrift_client\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\service\DgiService\helpers\internal\helpers.cpp">
+      <Filter>extern</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift_client\ThriftClientFLock.cpp">
+      <Filter>thrift_client</Filter>
+    </ClCompile>
+    <ClCompile Include="thrift_client\ThriftClientMain.cpp">
+      <Filter>thrift_client</Filter>
+    </ClCompile>
+    <ClCompile Include="view\shredder\WgtShredder.cpp">
+      <Filter>view\shredder</Filter>
+    </ClCompile>
+    <ClCompile Include="view\flock\WgtFLock.cpp">
+      <Filter>view\flock</Filter>
+    </ClCompile>
+    <ClCompile Include="view\encryption\WgtEncryption.cpp">
+      <Filter>view\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="view\bankcards\WgtBankcards.cpp">
+      <Filter>view\bankcards</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\DgiEngine.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="view\auth\WgtAuth.cpp">
+      <Filter>view\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="dgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="dgui.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="view\ExtendedTree.h">
+      <Filter>view</Filter>
+    </QtMoc>
+    <QtMoc Include="view\shredder\WgtShredder.h">
+      <Filter>view\shredder</Filter>
+    </QtMoc>
+    <QtMoc Include="view\flock\WgtFLock.h">
+      <Filter>view\flock</Filter>
+    </QtMoc>
+    <QtMoc Include="view\encryption\WgtEncryption.h">
+      <Filter>view\encryption</Filter>
+    </QtMoc>
+    <QtMoc Include="view\bankcards\WgtBankcards.h">
+      <Filter>view\bankcards</Filter>
+    </QtMoc>
+    <QtMoc Include="view\flock\WgtFLockContextChange.h">
+      <Filter>view\flock</Filter>
+    </QtMoc>
+    <QtMoc Include="view\flock\WgtFLockContextAddNew.h">
+      <Filter>view\flock</Filter>
+    </QtMoc>
+    <QtMoc Include="view\auth\WgtAuth.h">
+      <Filter>view\auth</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="dgui.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="dgui.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dgui.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiBanking.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiEncryption.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiFolderLock.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiSecureErase.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiServiceManager.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_constants.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_types.h">
+      <Filter>thrift_client\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\service\DgiService\helpers\internal\helpers.h">
+      <Filter>extern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\service\DgiService\helpers\internal\log.h">
+      <Filter>extern</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift_client\ThriftClientFLock.h">
+      <Filter>thrift_client</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift_client\ThriftClientMain.h">
+      <Filter>thrift_client</Filter>
+    </ClInclude>
+    <ClInclude Include="thrift_client\ThriftCommon.h">
+      <Filter>thrift_client</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\DgiCommon.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\DgiEngine.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

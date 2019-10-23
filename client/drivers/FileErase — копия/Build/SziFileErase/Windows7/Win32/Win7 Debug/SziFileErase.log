@@ -1,0 +1,33 @@
+﻿Build started 17.04.2019 20:51:46.
+     1>Project "D:\super_product\dguard\client\drivers\FileErase\SziFileErase\SziFileErase.vcxproj" on node 2 (Rebuild target(s)).
+     1>StampInf:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\stampinf.exe -d "*" -a "x86" -v "*" -k "1.11" -u "1.11.0" -f "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\SziFileErase.inf" 
+         Stamping D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\SziFileErase.inf [Version] section with DriverVer=04/17/2019,20.51.46.607
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\\" /Zi /nologo /W4 /WX /Od /Oi /Oy- /D _DEBUG /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\\" /Fd"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\vc120.pdb" /Gz /wd4995 /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files (x86)\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ SziEraseContext.c SziFileErase.c SziFileEraseImpl.c
+         SziEraseContext.c
+         SziFileErase.c
+         NTDDI_VERSION=0x06010000
+         SziFileEraseImpl.c
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /D "SMP_ID=\\\"{f2f62967-0815-4fd7-9b86-6eedcac766eb}\\\"" /l"0x0409" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\UM" /I"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\\" /nologo /fo"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\Resource.res" ..\..\CommonDrv\Resource.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Debug\SziFileErase.sys" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO /WX /SECTION:"INIT,d" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\fltmgr.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\Ksecdd.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\Netio.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\memcmp.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\BufferOverflowK.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\hal.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\wmilib.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Debug\SziFileErase.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"GsDriverEntry@8" /RELEASE /IMPLIB:"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Debug\SziFileErase.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X86 /PROFILE /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 /osversion:6.3 /pdbcompress /debugtype:pdata "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\Resource.res"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\SziEraseContext.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\SziFileErase.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Debug\SziFileEraseImpl.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Debug\SziCRC32.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Debug\SziEvent.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Debug\SziMD5.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Debug\SziSender.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Debug\SziLogging.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Debug\SziRegistry.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Debug\SziTools.obj"
+     1>SziSender.obj : error LNK2001: unresolved external symbol _NPI_WSK_INTERFACE_ID
+     1>D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Debug\SziFileErase.sys : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "D:\super_product\dguard\client\drivers\FileErase\SziFileErase\SziFileErase.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.79

@@ -1,0 +1,51 @@
+﻿Build started 18.04.2019 14:56:53.
+     1>Project "D:\super_product\dguard\client\drivers\FileErase\SziFileEraseDll\SziFileEraseDll.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /D _X86_=1 /D i386=1 /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHa /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileEraseDll\Win32\Win7 Release\\" /Fd"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileEraseDll\Win32\Win7 Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SziFileEraseDialog.cpp
+         SziFileEraseDialog.cpp
+     1>SziFileEraseDialog.cpp(60): error C2039: 'SziFileErase' : is not a member of 'szi::drv'
+     1>SziFileEraseDialog.cpp(60): error C2065: 'SziFileErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(60): error C2146: syntax error : missing ';' before identifier 'lErase'
+     1>SziFileEraseDialog.cpp(60): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(64): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(64): error C2228: left of '.Open' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(72): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(72): error C2228: left of '.EraseFile' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(78): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(78): error C2228: left of '.GetEventComplete' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(80): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(80): error C2228: left of '.GetNStatusComplete' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(101): error C2039: 'SziFileErase' : is not a member of 'szi::drv'
+     1>SziFileEraseDialog.cpp(101): error C2065: 'SziFileErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(101): error C2146: syntax error : missing ';' before identifier 'lErase'
+     1>SziFileEraseDialog.cpp(101): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(105): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(105): error C2228: left of '.Open' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(119): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(119): error C2228: left of '.EraseFile' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(125): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(125): error C2228: left of '.GetEventComplete' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(127): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(127): error C2228: left of '.GetNStatusComplete' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(142): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(142): error C2228: left of '.EraseFile' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(144): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(144): error C2228: left of '.GetEventComplete' must have class/struct/union
+                 type is 'unknown-type'
+     1>SziFileEraseDialog.cpp(146): error C2065: 'lErase' : undeclared identifier
+     1>SziFileEraseDialog.cpp(146): error C2228: left of '.GetNStatusComplete' must have class/struct/union
+                 type is 'unknown-type'
+     1>Done Building Project "D:\super_product\dguard\client\drivers\FileErase\SziFileEraseDll\SziFileEraseDll.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.75

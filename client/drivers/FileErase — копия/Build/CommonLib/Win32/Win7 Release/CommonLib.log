@@ -1,0 +1,24 @@
+﻿Build started 18.04.2019 10:15:23.
+     1>Project "D:\super_product\dguard\client\drivers\CommonLib\CommonLib\CommonLib.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl- /O2 /Oi /Oy- /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\\" /Fd"D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CommandLine.cpp SziDecodeError.cpp SziFile.cpp SziFileMapping.cpp SziRegistry.cpp SziString.cpp
+         CommandLine.cpp
+         SziDecodeError.cpp
+         SziFile.cpp
+         SziFileMapping.cpp
+         SziRegistry.cpp
+         SziString.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\\CommonLib.lib" /NOLOGO /LTCG "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\CommandLine.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\SziDecodeError.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\SziFile.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\SziFileMapping.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\SziRegistry.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\Win7 Release\SziString.obj"
+         CommonLib.vcxproj -> D:\super_product\dguard\client\drivers\FileErase\\Build\CommonLib\Win32\\CommonLib.lib
+     1>Done Building Project "D:\super_product\dguard\client\drivers\CommonLib\CommonLib\CommonLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.84

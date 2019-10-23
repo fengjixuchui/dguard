@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="dgui">
+		<file>ico/play.ico</file>
+        <file>ico/options.ico</file>
+        <file>ico/pause.ico</file>
+		<file>ico/stop.ico</file>
+		<file>ico/ok.ico</file>
+		<file>ico/home.ico</file>
+		<file>ico/badobjects.ico</file>
+		<file>ico/reports.ico</file>
+		<file>ico/scan.ico</file>
+		<file>ico/tool.ico</file>
+		<file>ico/security.ico</file>
+		<file>ico/info.ico</file>
+		<file>ico/folder.ico</file>
+		<file>ico/noset.ico</file>
+		<file>ico/warning.ico</file>
+		<file>ico/remove.ico</file>
+		<file>ico/dll.ico</file>
+		<file>ico/close.ico</file>
+		<file>ico/help.ico</file>
+		<file>ico/calendar.ico</file>
+		<file>ico/recovery.ico</file>
+		<file>ico/add.ico</file>
+		<file>ico/application.ico</file>
+		<file>ico/settings.ico</file>
+		<file>ico/dll_black.ico</file>
+		<file>ico/bin.ico</file>
+		<file>ico/exe16.ico</file>
+		<file>ico/russian.ico</file>
+		<file>ico/english.ico</file>
+		<file>ico/card.ico</file>
+		<file>ico/locked_32x32.ico</file>
+		<file>ico/locked_24x24.ico</file>
+		<file>ico/unlocked_24x24.ico</file>
+		<file>ico/unlocked_32x32.ico</file>
+		<file>ico/security_32x32.ico</file>
+		<file>ico/security_24x24.ico</file>
+		<file>ico/dir_24x24.ico</file>
+		<file>ico/file_24x24.ico</file>
+		<file>ico/folderlock_32x32.ico</file>
+		<file>ico/shredder_32x32.ico</file>
+		<file>ico/encryption_32x32.ico</file>
+    </qresource>
+</RCC>

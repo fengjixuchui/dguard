@@ -1,0 +1,31 @@
+﻿Build started 18.04.2019 14:56:47.
+     1>Project "D:\super_product\dguard\client\drivers\FileErase\SziFileErase\SziFileErase.vcxproj" on node 2 (Build target(s)).
+     1>StampInf:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\stampinf.exe -d "*" -a "x86" -v "*" -k "1.11" -u "1.11.0" -f "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\SziFileErase.inf" 
+         Stamping D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\SziFileErase.inf [Version] section with DriverVer=04/18/2019,14.56.48.868
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\\" /Zi /nologo /W4 /WX /Ox /Os /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\\" /Fd"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\vc120.pdb" /Gz /wd4995 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files (x86)\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ SziFileErase.c
+         SziFileErase.c
+         NTDDI_VERSION=0x06010000
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Release\SziFileErase.sys" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO /WX /SECTION:"INIT,d" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\fltmgr.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\Ksecdd.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\Netio.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\UM\x86\uuid.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\memcmp.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\BufferOverflowK.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\hal.lib" "C:\Program Files (x86)\Windows Kits\8.1\lib\win7\KM\x86\wmilib.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Release\SziFileErase.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"GsDriverEntry@8" /RELEASE /IMPLIB:"D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Release\SziFileErase.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X86 /PROFILE /SAFESEH /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 /osversion:6.3 /pdbcompress /debugtype:pdata "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\Resource.res"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\SziEraseContext.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\SziFileErase.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7 Release\SziFileEraseImpl.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Release\SziCRC32.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Release\SziEvent.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Release\SziMD5.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Release\SziSender.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Release\SziLogging.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Release\SziRegistry.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\Build\CommonDrv\Win32\Win7 Release\SziTools.obj"
+         SziFileErase.vcxproj -> D:\super_product\dguard\client\drivers\FileErase\\Build\SziFileErase\Windows7\Win32\Win7Release\SziFileErase.sys
+       PostBuildEvent:
+         copy /B /Y DriverFileErase.h D:\super_product\dguard\client\drivers\FileErase\\SziFileEraseLib
+         :VCEnd
+         Скопировано файлов:         1.
+     1>Done Building Project "D:\super_product\dguard\client\drivers\FileErase\SziFileErase\SziFileErase.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.82

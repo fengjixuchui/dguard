@@ -1,0 +1,26 @@
+﻿Build started 17.04.2019 20:51:44.
+     1>Project "D:\super_product\dguard\client\drivers\CommonDrv\CommonDrv.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\\" /Zi /nologo /W4 /WX /Od /Oi /Oy- /D _DEBUG /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\\" /Fd"D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\vc120.pdb" /Gz /wd4995 /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files (x86)\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ SziCRC32.c SziEvent.c SziMD5.c SziSender.c SziLogging.c SziRegistry.c SziTools.c
+         SziCRC32.c
+         SziEvent.c
+         SziMD5.c
+         SziSender.c
+         SziLogging.c
+         SziRegistry.c
+         SziTools.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7Debug\CommonDrv.lib" /NOLOGO /MACHINE:X86 "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\SziCRC32.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\SziEvent.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\SziMD5.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\SziSender.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\SziLogging.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\SziRegistry.obj"
+         "D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7 Debug\SziTools.obj"
+         CommonDrv.vcxproj -> D:\super_product\dguard\client\drivers\FileErase\\Build\CommonDrv\Win32\Win7Debug\CommonDrv.lib
+     1>Done Building Project "D:\super_product\dguard\client\drivers\CommonDrv\CommonDrv.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.90

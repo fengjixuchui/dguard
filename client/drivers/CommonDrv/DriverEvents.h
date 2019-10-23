@@ -1,0 +1,43 @@
+#pragma once
+
+// версия и сигнальная последовательность
+#define EVENT_MASK				0xF7F6
+#define EVENT_VERSION			0x0001
+
+//ид драйвера
+#define DRIVER_FSCONTROL		0x0011
+#define DRIVER_FILEERASE		0x0012
+#define DRIVER_EXCONTROL		0x0013
+#define DRIVER_RGCONTROL		0x0014
+#define DRIVER_HWCONTROL		0x0015
+#define DRIVER_DEVCONTROL		0x0016
+
+//События DRIVER_FSCONTROL
+#define EVENT_EVENT_ACCESSDENIED_FILE			0x1101			// hi DRIVER lw number event
+#define EVENT_EVENT_ACCESSDENIED_FOLDER			0x1102
+#define EVENT_EVENT_ACCESSDENIED_VOLUME			0x1103
+#define EVENT_EVENT_ACCESSSUCCESS_FILE			0x1104
+#define EVENT_EVENT_ACCESSSUCCESS_FOLDER		0x1105
+#define EVENT_EVENT_ACCESSSUCCESS_VOLUME		0x1106
+
+//События DRIVER_FILEERASE
+#define EVENT_EVENT_SET_AUTOERASE				0x1201
+
+//События DRIVER_EXCONTROL
+#define EVENT_EVENT_EXEDENIED					0x1301
+#define EVENT_EVENT_EXESUCCESS					0x1302
+
+//События DRIVER_RGCONTROL
+#define EVENT_EVENT_ACCESSDENIED_REGKEY			0x1401
+
+//События DRIVER_HWCONTROL
+#define EVENT_EVENT_ACCESSDENIED_DEVICE			0x1501
+#define EVENT_EVENT_ACCESSSUCCESS_DEVICE		0x1502
+
+#pragma pack(2)
+typedef struct _HEAD_EVENT {
+	unsigned short	Mask;			//EVENT_MASK
+	unsigned short	Version;		//EVENT_VERSION_??
+	unsigned short	Size;			//Размер данных
+} HEAD_EVENT, *PHEAD_EVENT;
+#pragma pack()

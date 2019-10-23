@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="helpers">
+      <UniqueIdentifier>{a95f0dc2-b5af-423d-94de-a07ed577e482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\internal">
+      <UniqueIdentifier>{e885928c-247a-4aec-bee1-0ff8eee2fff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\base64">
+      <UniqueIdentifier>{472e6570-4a00-44b0-b0e9-12ddf3f62e12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\containers">
+      <UniqueIdentifier>{662a3d2e-a89f-4df9-a405-39a88f0226be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\containers\file">
+      <UniqueIdentifier>{ac0d3938-1223-4892-aba5-f476c61a1813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\zip">
+      <UniqueIdentifier>{192d3cd4-f79c-45ef-8e45-1b997a075ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\xml">
+      <UniqueIdentifier>{e8455ed3-8057-44aa-b06f-7045216ba420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\system">
+      <UniqueIdentifier>{cbe7d250-2060-4380-82c0-eb30ad620d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\system\privileges">
+      <UniqueIdentifier>{1dac6624-c84a-491e-92f7-8c8825088e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\system\process">
+      <UniqueIdentifier>{84893eff-870f-40d3-b46e-92779d131e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\internal\helper">
+      <UniqueIdentifier>{bed8b17e-102d-4c5b-a800-14e0d610ee91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\encryption">
+      <UniqueIdentifier>{b9abe4a1-3909-41e7-bf77-1a325f46e9c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\encryption\Grader">
+      <UniqueIdentifier>{d9010f1e-270e-451e-b29b-ded8a4e51778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\encryption\hash">
+      <UniqueIdentifier>{68da5090-93eb-4693-815e-03926c770f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\encryption\hash\md5">
+      <UniqueIdentifier>{d884d3e1-5e6f-4f1e-8a8f-7836b9d8a576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services">
+      <UniqueIdentifier>{d630fe45-c100-4ae5-94b9-79f5fe569125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\windows">
+      <UniqueIdentifier>{c80ce977-05f8-4998-a73f-1d466206ad3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift-gen">
+      <UniqueIdentifier>{89a79b98-3553-4bdd-8fab-34d4f30d82ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\sync">
+      <UniqueIdentifier>{30f4e11b-f053-47a8-814f-567bdf3388cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\system\users">
+      <UniqueIdentifier>{38b194ff-5095-462e-8a41-159cd44af63f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="depends">
+      <UniqueIdentifier>{ee25907f-6cb6-47e4-905a-78a72423d7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="depends\wtsapi">
+      <UniqueIdentifier>{661863a3-fae7-4cb6-8f16-1e9f93e4be4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{91604d0a-2f62-4a1a-b314-3560640c64f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl">
+      <UniqueIdentifier>{3adc88e3-41a7-42e2-b26a-adac7f06444e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\Banking">
+      <UniqueIdentifier>{66601c21-7042-4a71-bd08-9ec1619e29a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\Erasing">
+      <UniqueIdentifier>{e3cceb1c-a881-48b7-934b-5b3665904e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\Encryption">
+      <UniqueIdentifier>{5428fc53-4b62-4c23-9b72-fb18dc3c0218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\FolderLock">
+      <UniqueIdentifier>{01ad2abc-de53-4c43-9263-adfc7fd80b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\session">
+      <UniqueIdentifier>{4a13f412-51f6-48e9-8a65-c8780d34300a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\common">
+      <UniqueIdentifier>{0011d545-f271-4419-b499-1617ff22d3dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\banking">
+      <UniqueIdentifier>{16ee7331-5dd1-4090-a7ad-350798286982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\banking\storage">
+      <UniqueIdentifier>{56097f0b-1d45-4c83-b078-c76137ec9fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\banking\manager">
+      <UniqueIdentifier>{6c3d4c71-9703-4766-963d-ef9714a80768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\banking\type-convertors">
+      <UniqueIdentifier>{e683b8ff-7499-4ae7-8df6-2e963d32ff56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\type-convertors">
+      <UniqueIdentifier>{21dd91d4-6a8e-41ad-a46e-948f5fa94129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{3dce0387-ba3a-40d9-9146-26c046186e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\banking">
+      <UniqueIdentifier>{7d656a1a-2ddc-456b-a07d-968930c36926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\erasing">
+      <UniqueIdentifier>{57163bed-0471-4ea4-a7ca-7cc38060945d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\erasing\manager">
+      <UniqueIdentifier>{5dd0f7bb-830f-43a9-8592-0cdb343c7542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\erasing\type-convertors">
+      <UniqueIdentifier>{b4754e54-da64-464d-8349-c634c8eaaaa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift-gen\SecureErase">
+      <UniqueIdentifier>{11b12163-4736-48d0-8b7a-afd6c6f050d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift-gen\Banking">
+      <UniqueIdentifier>{83e8c93a-efaa-4840-a21a-6d5cda092650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift-gen\Common">
+      <UniqueIdentifier>{ee162e50-f71b-4ea6-86c5-e6f21ca993b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift-gen\Manager">
+      <UniqueIdentifier>{efa8670d-5c9b-4423-b872-98e9fcac3904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\common">
+      <UniqueIdentifier>{97730360-a51e-4242-95ed-4abd05431504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\async">
+      <UniqueIdentifier>{a98209c6-ff7c-4590-af40-b6ec3a38dba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\type-convertors">
+      <UniqueIdentifier>{da4be4d7-4535-4baa-b7ec-b66ca5039a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\folderlock">
+      <UniqueIdentifier>{0d391339-6e32-4096-bc29-7ebe74c597ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\folderlock\manager">
+      <UniqueIdentifier>{44448b21-2160-4734-9dcb-0305f6fa3ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\folderlock\storage">
+      <UniqueIdentifier>{42491654-7dff-4a47-b0ae-deea710c39ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift-gen\FolderLock">
+      <UniqueIdentifier>{fd8ccf35-da41-4bfc-91c1-3922451fb8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers\keeper">
+      <UniqueIdentifier>{6caa5247-fecb-44a8-9796-54dde6ead977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thrift-gen\Encryption">
+      <UniqueIdentifier>{34f86d66-6eb5-47e1-9bf9-597da487ef15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\encryption">
+      <UniqueIdentifier>{ff042edf-3553-40f2-b4f6-15c23fdc9a2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\encryption\onthefly">
+      <UniqueIdentifier>{2e4a13f3-dc02-4245-b61f-c23873e38181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\encryption\files">
+      <UniqueIdentifier>{11227f66-229a-40b5-b917-bb8379e5c4c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\encryption\files\manager">
+      <UniqueIdentifier>{a19dcd23-0f42-4994-b316-0f21aa52bf10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\ThriftManager">
+      <UniqueIdentifier>{959ad764-817a-4b55-8e58-b0a35ec57a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\thrift_impl\Main">
+      <UniqueIdentifier>{e1861a38-de5b-4a69-bd59-5fdea2e1fa89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\folderlock\driver">
+      <UniqueIdentifier>{2c7edb26-165f-4b90-8dda-b3fc4f853787}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\base64\base64.cpp">
+      <Filter>helpers\base64</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\system\process\process.cpp">
+      <Filter>helpers\system\process</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\system\privileges\privileges.cpp">
+      <Filter>helpers\system\privileges</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\xml\xmlParser.cpp">
+      <Filter>helpers\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\zip\zlibarch.cpp">
+      <Filter>helpers\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\internal\helpers.cpp">
+      <Filter>helpers\internal\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\encryption\hash\md5\MD5.cpp">
+      <Filter>helpers\encryption\hash\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\encryption\Grader\Grader.cpp">
+      <Filter>helpers\encryption\Grader</Filter>
+    </ClCompile>
+    <ClCompile Include="services\ServiceWorker.cpp">
+      <Filter>services</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\system\users\windowsUsers.cpp">
+      <Filter>helpers\system\users</Filter>
+    </ClCompile>
+    <ClCompile Include="depends\wtsapi\wtspfn.cpp">
+      <Filter>depends\wtsapi</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\Banking\DgiBankingService.cpp">
+      <Filter>services\thrift_impl\Banking</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\session\DgiSession.cpp">
+      <Filter>logic\session</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\banking\storage\CardsStorage.cpp">
+      <Filter>logic\banking\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\banking\manager\ManagerBanking.cpp">
+      <Filter>logic\banking\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\banking\type-convertors\TDgiBankingConvertor.cpp">
+      <Filter>logic\banking\type-convertors</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\common\DgiEngine.cpp">
+      <Filter>logic\common</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\common\DgiCrypt.cpp">
+      <Filter>logic\common</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\banking\testCardsKeeper.cpp">
+      <Filter>tests\banking</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\encryption\cryptoHelpers.cpp">
+      <Filter>helpers\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiSecureErase.cpp">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_constants.cpp">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_types.cpp">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.cpp">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.cpp">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiBanking.cpp">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_constants.cpp">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_types.cpp">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.cpp">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_types.cpp">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.cpp">
+      <Filter>thrift-gen\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_types.cpp">
+      <Filter>thrift-gen\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_constants.cpp">
+      <Filter>thrift-gen\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_types.cpp">
+      <Filter>thrift-gen\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\SecureErase\DgiSecureEraseService.cpp">
+      <Filter>services\thrift_impl\Erasing</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\erasing\manager\ManagerSecureErase.cpp">
+      <Filter>logic\erasing\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\common\DgiCryptoTest.cpp">
+      <Filter>tests\common</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\common\DgiTest.cpp">
+      <Filter>tests\common</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\SecureErase\AsyncEraseHandler.cpp">
+      <Filter>services\thrift_impl\Erasing</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\async\AsyncRequestsKeeper.cpp">
+      <Filter>services\thrift_impl\async</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiEraseConvertor.cpp">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiThriftTypesConverter.cpp">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\folderlock\manager\DgiFolderLockManager.cpp">
+      <Filter>logic\folderlock\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\folderlock\storage\DgiFolderLockStorage.cpp">
+      <Filter>logic\folderlock\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiFolderLock.cpp">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_constants.cpp">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_types.cpp">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.cpp">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.cpp">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\FolderLock\DgiFolderLockService.cpp">
+      <Filter>services\thrift_impl\FolderLock</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiFLockConvertor.cpp">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\keeper\filesKeeper.cpp">
+      <Filter>helpers\keeper</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\common\DgiConf.cpp">
+      <Filter>logic\common</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\common\master-password.cpp">
+      <Filter>logic\common</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\common\DgiCommon.cpp">
+      <Filter>logic\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiEncryption.cpp">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_constants.cpp">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_types.cpp">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.cpp">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.cpp">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\encryption\files\manager\FileEncoder.cpp">
+      <Filter>logic\encryption\files\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\Encryption\DgiEncryptionService.cpp">
+      <Filter>services\thrift_impl\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\Encryption\AsyncEncryptionHandler.cpp">
+      <Filter>services\thrift_impl\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiEncryptionConvertor.cpp">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\async\AsyncDispatcher.cpp">
+      <Filter>services\thrift_impl\async</Filter>
+    </ClCompile>
+    <ClCompile Include="services\thrift_impl\Main\DgiMainService.cpp">
+      <Filter>services\thrift_impl\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiServiceManager.cpp">
+      <Filter>thrift-gen\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\common\DgiSync.cpp">
+      <Filter>logic\common</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\folderlock\driver\ClientFLockNative.cpp">
+      <Filter>logic\folderlock\driver</Filter>
+    </ClCompile>
+    <ClCompile Include="services\windows\windowsService.cpp">
+      <Filter>services\windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="helpers\internal\log.h">
+      <Filter>helpers\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\containers\file\mapper.h">
+      <Filter>helpers\containers\file</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\containers\file\tstorage.h">
+      <Filter>helpers\containers\file</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\containers\ths_map.h">
+      <Filter>helpers\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\base64\base64.h">
+      <Filter>helpers\base64</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\system\process\process.h">
+      <Filter>helpers\system\process</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\system\privileges\privileges.h">
+      <Filter>helpers\system\privileges</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\xml\xmlParser.h">
+      <Filter>helpers\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\zip\zlibarch.h">
+      <Filter>helpers\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\internal\helpers.h">
+      <Filter>helpers\internal\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\encryption\hash\md5\MD5.h">
+      <Filter>helpers\encryption\hash\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\encryption\Grader\Grader.h">
+      <Filter>helpers\encryption\Grader</Filter>
+    </ClInclude>
+    <ClInclude Include="services\windows\windowsService.h">
+      <Filter>services\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="services\ServiceWorker.h">
+      <Filter>services</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\system\users\windowsUsers.h">
+      <Filter>helpers\system\users</Filter>
+    </ClInclude>
+    <ClInclude Include="depends\wtsapi\wtspfn.h">
+      <Filter>depends\wtsapi</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\Banking\DgiBankingService.h">
+      <Filter>services\thrift_impl\Banking</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\session\DgiSession.h">
+      <Filter>logic\session</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\banking\storage\CardsStorage.h">
+      <Filter>logic\banking\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\banking\manager\ManagerBanking.h">
+      <Filter>logic\banking\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\DgiCommon.h">
+      <Filter>logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\banking\type-convertors\TDgiBankingConvertor.h">
+      <Filter>logic\banking\type-convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\DgiEngine.h">
+      <Filter>logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\DgiCrypt.h">
+      <Filter>logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\banking\testCardsKeeper.h">
+      <Filter>tests\banking</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\encryption\cryptoHelpers.h">
+      <Filter>helpers\encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiSecureErase.h">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_constants.h">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_types.h">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.h">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.h">
+      <Filter>thrift-gen\SecureErase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiBanking.h">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_constants.h">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_types.h">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.h">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_types.h">
+      <Filter>thrift-gen\Banking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.h">
+      <Filter>thrift-gen\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_types.h">
+      <Filter>thrift-gen\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_constants.h">
+      <Filter>thrift-gen\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_types.h">
+      <Filter>thrift-gen\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\SecureErase\DgiSecureEraseService.h">
+      <Filter>services\thrift_impl\Erasing</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\erasing\manager\ManagerSecureErase.h">
+      <Filter>logic\erasing\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\common\DgiCryptoTest.h">
+      <Filter>tests\common</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\common\DgiTest.h">
+      <Filter>tests\common</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\SecureErase\AsyncEraseHandler.h">
+      <Filter>services\thrift_impl\Erasing</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\async\AsyncRequestsKeeper.h">
+      <Filter>services\thrift_impl\async</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiEraseConvertor.h">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiThriftTypesConverter.h">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\folderlock\manager\DgiFolderLockManager.h">
+      <Filter>logic\folderlock\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\folderlock\storage\DgiFolderLockStorage.h">
+      <Filter>logic\folderlock\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiFolderLock.h">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_constants.h">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_types.h">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.h">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.h">
+      <Filter>thrift-gen\FolderLock</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\FolderLock\DgiFolderLockService.h">
+      <Filter>services\thrift_impl\FolderLock</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiFLockConvertor.h">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\keeper\filesKeeper.h">
+      <Filter>helpers\keeper</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\DgiConf.h">
+      <Filter>logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\master-password.h">
+      <Filter>logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiEncryption.h">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_constants.h">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_types.h">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.h">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.h">
+      <Filter>thrift-gen\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\encryption\files\manager\FileEncoder.h">
+      <Filter>logic\encryption\files\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\Encryption\DgiEncryptionService.h">
+      <Filter>services\thrift_impl\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\Encryption\AsyncEncryptionHandler.h">
+      <Filter>services\thrift_impl\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiEncryptionConvertor.h">
+      <Filter>services\thrift_impl\type-convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\async\AsyncDispatcher.h">
+      <Filter>services\thrift_impl\async</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\ThriftManager\ThriftServiceManager.h">
+      <Filter>services\thrift_impl\ThriftManager</Filter>
+    </ClInclude>
+    <ClInclude Include="services\thrift_impl\Main\DgiMainService.h">
+      <Filter>services\thrift_impl\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiServiceManager.h">
+      <Filter>thrift-gen\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\DgiSync.h">
+      <Filter>logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\folderlock\driver\ClientFLockNative.h">
+      <Filter>logic\folderlock\driver</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\common\DgiCommonControl.h">
+      <Filter>logic\common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon_dgi.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DgiService1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-mt|Win32">
+      <Configuration>Debug-mt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-mt|x64">
+      <Configuration>Debug-mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-mt|Win32">
+      <Configuration>Release-mt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-mt|x64">
+      <Configuration>Release-mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACA2F9B4-95AD-40EA-83CE-89841EE9A45E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DgiService</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release-mt|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_ZLIB_ROOT)\src;$(DG_CRYPTOPP_ROOT)\src;$(CRYPTOPRO_SDK)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc120\x86\debug;$(DG_OPENSSL_ROOT)\vc-win32-debug\lib;$(DG_ZLIB_ROOT)\built\msvc120\x86\debug;$(DG_CRYPTOPP_ROOT)\bin\msvc120\x86\debug;$(LibraryPath)</LibraryPath>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_ZLIB_ROOT)\sources;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x64\debug\dll;$(DG_OPENSSL_ROOT)\vc-win64-debug\bin;$(DG_ZLIB_ROOT)\built\msvc120\x64\debug;$(DG_CRYPTOPP_ROOT)\bin\msvc120\x86\debug;$(LibraryPath)</LibraryPath>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x86\debug\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x86\debug\static;$(DG_OPENSSL_ROOT)\msvc141\debug_x86;$(DG_ZLIB_ROOT)\built\msvc141\x86\debug\static;$(LibraryPath)</LibraryPath>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_ZLIB_ROOT)\src;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_OPENSSL_ROOT)\msvc141\debug_x64;$(DG_THRIFT_ROOT)\built\msvc141\x64\debug\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x64\debug\static;$(DG_ZLIB_ROOT)\built\msvc120\x64\debug;$(LibraryPath)</LibraryPath>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_ZLIB_ROOT)\src;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x86\release\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x86\release\static;$(DG_OPENSSL_ROOT)\msvc141\release_x86;$(LibraryPath)</LibraryPath>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DG_BOOST_ROOT);$(DG_BOOST_ROOT)\boost;$(DG_THRIFT_ROOT)\src\lib\cpp\src\thrift;$(DG_THRIFT_ROOT)\src\lib\cpp\src;$(DG_ZLIB_ROOT)\src;$(DG_CRYPTOPP_ROOT)\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DG_BOOST_ROOT)\stage\lib;$(DG_THRIFT_ROOT)\built\msvc141\x64\release\static;$(DG_CRYPTOPP_ROOT)\bin\msvc141\x64\release\static;$(DG_OPENSSL_ROOT)\msvc141\release_x64;$(DG_ZLIB_ROOT)\built\msvc120\x64\release;$(LibraryPath)</LibraryPath>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libthrift.lib;zlibstat.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>cd %DG_BOOST_ROOT%
+bjam -a --variant=debug --toolset=msvc-12.0 address-model=32 --with-date_time --with-thread --with-filesystem --with-system --with-regex --with-program_options link=static</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p "$(DG_SIGN_CERT_PASS)" /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\x86\"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Create digital signature</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libthrift.lib;zlibstat.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>cd %DG_BOOST_ROOT%
+bjam -a --variant=debug --toolset=msvc-12.0 address-model=32 --with-date_time --with-thread --with-filesystem --with-system --with-regex --with-program_options link=static</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p "$(DG_SIGN_CERT_PASS)" /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\x64\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libthrift.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>cd %DG_BOOST_ROOT%
+bjam -a --variant=debug --toolset=msvc-14.1 address-model=32 --with-date_time --with-thread --with-filesystem --with-system --with-regex --with-program_options link=static</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p "$(DG_SIGN_CERT_PASS)" /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\x86\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libthrift.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>cd %DG_BOOST_ROOT%
+bjam -a --variant=debug --toolset=msvc-14.1 address-model=64 --with-date_time --with-thread --with-filesystem --with-system --with-regex --with-program_options link=static</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p "$(DG_SIGN_CERT_PASS)" /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\x64\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libthrift.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>cd %DG_BOOST_ROOT%
+bjam -a --variant=release --toolset=msvc-14.1 address-model=32 --with-date_time --with-atomic --with-thread --with-filesystem --with-regex --with-locale --with-system --with-program_options link=static runtime-link=static</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p "$(DG_SIGN_CERT_PASS)" /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\x86\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libthrift.lib;libssl.lib;libcrypto.lib;cryptlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>cd %DG_BOOST_ROOT%
+bjam -a --variant=release --toolset=msvc-14.1 address-model=64 --with-date_time --with-atomic --with-thread --with-filesystem --with-regex --with-locale --with-system --with-program_options link=static runtime-link=static</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>signtool.exe sign /v /ac "$(DG_CROSS_CERT)" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "$(DG_SIGN_CERT)" /p "$(DG_SIGN_CERT_PASS)" /d "FLock" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "$(TargetPath)"
+
+copy /y "$(TargetPath)" "$(SolutionDir)Data Guard\x64\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\thrift\cpp\DgiBanking.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBankingTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiBanking_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiCommonTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiEncryption.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiEncryption_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiFolderLock.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiFolderLock_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiSecureErase.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiSecureErase_types.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\DgiServiceManager.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_constants.cpp" />
+    <ClCompile Include="..\..\..\thrift\cpp\dgiServiceManager_types.cpp" />
+    <ClCompile Include="depends\wtsapi\wtspfn.cpp" />
+    <ClCompile Include="helpers\base64\base64.cpp" />
+    <ClCompile Include="helpers\encryption\cryptoHelpers.cpp" />
+    <ClCompile Include="helpers\encryption\Grader\Grader.cpp" />
+    <ClCompile Include="helpers\encryption\hash\md5\MD5.cpp" />
+    <ClCompile Include="helpers\internal\helpers.cpp" />
+    <ClCompile Include="helpers\keeper\filesKeeper.cpp" />
+    <ClCompile Include="helpers\system\privileges\privileges.cpp" />
+    <ClCompile Include="helpers\system\process\process.cpp" />
+    <ClCompile Include="helpers\system\users\windowsUsers.cpp" />
+    <ClCompile Include="helpers\xml\xmlParser.cpp" />
+    <ClCompile Include="helpers\zip\zlibarch.cpp" />
+    <ClCompile Include="logic\banking\manager\ManagerBanking.cpp" />
+    <ClCompile Include="logic\banking\storage\CardsStorage.cpp" />
+    <ClCompile Include="logic\banking\type-convertors\TDgiBankingConvertor.cpp" />
+    <ClCompile Include="logic\common\DgiCommon.cpp" />
+    <ClCompile Include="logic\common\DgiConf.cpp" />
+    <ClCompile Include="logic\common\DgiCrypt.cpp" />
+    <ClCompile Include="logic\common\DgiEngine.cpp" />
+    <ClCompile Include="logic\common\DgiSync.cpp" />
+    <ClCompile Include="logic\common\master-password.cpp" />
+    <ClCompile Include="logic\encryption\files\manager\FileEncoder.cpp" />
+    <ClCompile Include="logic\erasing\manager\ManagerSecureErase.cpp" />
+    <ClCompile Include="logic\folderlock\driver\ClientFLockNative.cpp" />
+    <ClCompile Include="logic\folderlock\manager\DgiFolderLockManager.cpp" />
+    <ClCompile Include="logic\folderlock\storage\DgiFolderLockStorage.cpp" />
+    <ClCompile Include="logic\session\DgiSession.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="services\ServiceWorker.cpp" />
+    <ClCompile Include="services\thrift_impl\async\AsyncDispatcher.cpp" />
+    <ClCompile Include="services\thrift_impl\async\AsyncRequestsKeeper.cpp" />
+    <ClCompile Include="services\thrift_impl\Banking\DgiBankingService.cpp" />
+    <ClCompile Include="services\thrift_impl\Encryption\AsyncEncryptionHandler.cpp" />
+    <ClCompile Include="services\thrift_impl\Encryption\DgiEncryptionService.cpp" />
+    <ClCompile Include="services\thrift_impl\FolderLock\DgiFolderLockService.cpp" />
+    <ClCompile Include="services\thrift_impl\Main\DgiMainService.cpp" />
+    <ClCompile Include="services\thrift_impl\SecureErase\AsyncEraseHandler.cpp" />
+    <ClCompile Include="services\thrift_impl\SecureErase\DgiSecureEraseService.cpp" />
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiEncryptionConvertor.cpp" />
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiEraseConvertor.cpp" />
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiFLockConvertor.cpp" />
+    <ClCompile Include="services\thrift_impl\type-convertors\TDgiThriftTypesConverter.cpp" />
+    <ClCompile Include="services\windows\windowsService.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="tests\banking\testCardsKeeper.cpp" />
+    <ClCompile Include="tests\common\DgiCryptoTest.cpp" />
+    <ClCompile Include="tests\common\DgiTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\thrift\cpp\DgiBanking.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBankingTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiBanking_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiCommonTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiEncryption.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryptionTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiEncryption_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiFolderLock.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLockTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiFolderLock_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiSecureErase.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureEraseTypes_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiSecureErase_types.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\DgiServiceManager.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_constants.h" />
+    <ClInclude Include="..\..\..\thrift\cpp\dgiServiceManager_types.h" />
+    <ClInclude Include="depends\wtsapi\wtspfn.h" />
+    <ClInclude Include="helpers\base64\base64.h" />
+    <ClInclude Include="helpers\containers\file\mapper.h" />
+    <ClInclude Include="helpers\containers\file\tstorage.h" />
+    <ClInclude Include="helpers\containers\ths_map.h" />
+    <ClInclude Include="helpers\encryption\cryptoHelpers.h" />
+    <ClInclude Include="helpers\encryption\Grader\Grader.h" />
+    <ClInclude Include="helpers\encryption\hash\md5\MD5.h" />
+    <ClInclude Include="helpers\internal\helpers.h" />
+    <ClInclude Include="helpers\internal\log.h" />
+    <ClInclude Include="helpers\keeper\filesKeeper.h" />
+    <ClInclude Include="helpers\system\privileges\privileges.h" />
+    <ClInclude Include="helpers\system\process\process.h" />
+    <ClInclude Include="helpers\system\users\windowsUsers.h" />
+    <ClInclude Include="helpers\xml\xmlParser.h" />
+    <ClInclude Include="helpers\zip\zlibarch.h" />
+    <ClInclude Include="logic\banking\manager\ManagerBanking.h" />
+    <ClInclude Include="logic\banking\storage\CardsStorage.h" />
+    <ClInclude Include="logic\banking\type-convertors\TDgiBankingConvertor.h" />
+    <ClInclude Include="logic\common\DgiCommon.h" />
+    <ClInclude Include="logic\common\DgiCommonControl.h" />
+    <ClInclude Include="logic\common\DgiConf.h" />
+    <ClInclude Include="logic\common\DgiCrypt.h" />
+    <ClInclude Include="logic\common\DgiEngine.h" />
+    <ClInclude Include="logic\common\DgiSync.h" />
+    <ClInclude Include="logic\common\master-password.h" />
+    <ClInclude Include="logic\encryption\files\manager\FileEncoder.h" />
+    <ClInclude Include="logic\erasing\manager\ManagerSecureErase.h" />
+    <ClInclude Include="logic\folderlock\driver\ClientFLockNative.h" />
+    <ClInclude Include="logic\folderlock\manager\DgiFolderLockManager.h" />
+    <ClInclude Include="logic\folderlock\storage\DgiFolderLockStorage.h" />
+    <ClInclude Include="logic\session\DgiSession.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="services\ServiceWorker.h" />
+    <ClInclude Include="services\thrift_impl\async\AsyncDispatcher.h" />
+    <ClInclude Include="services\thrift_impl\async\AsyncRequestsKeeper.h" />
+    <ClInclude Include="services\thrift_impl\Banking\DgiBankingService.h" />
+    <ClInclude Include="services\thrift_impl\Encryption\AsyncEncryptionHandler.h" />
+    <ClInclude Include="services\thrift_impl\Encryption\DgiEncryptionService.h" />
+    <ClInclude Include="services\thrift_impl\FolderLock\DgiFolderLockService.h" />
+    <ClInclude Include="services\thrift_impl\Main\DgiMainService.h" />
+    <ClInclude Include="services\thrift_impl\SecureErase\AsyncEraseHandler.h" />
+    <ClInclude Include="services\thrift_impl\SecureErase\DgiSecureEraseService.h" />
+    <ClInclude Include="services\thrift_impl\ThriftManager\ThriftServiceManager.h" />
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiEncryptionConvertor.h" />
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiEraseConvertor.h" />
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiFLockConvertor.h" />
+    <ClInclude Include="services\thrift_impl\type-convertors\TDgiThriftTypesConverter.h" />
+    <ClInclude Include="services\windows\windowsService.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tests\banking\testCardsKeeper.h" />
+    <ClInclude Include="tests\common\DgiCryptoTest.h" />
+    <ClInclude Include="tests\common\DgiTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\drivers\FileErase\SziFileEraseLib\SziFileEraseDriver.vcxproj">
+      <Project>{0cf8875b-aaf7-4cbc-b9e2-6c49f6c19c6f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon_dgi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DgiService1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x64\signtool.exe" sign /v /ac "%DG_CROSS_CERT%" /t http://timestamp.verisign.com/scripts/timstamp.dll /f "%DG_SIGN_CERT%" /p %DG_SIGN_CERT_PASS% /d "Data Guard Setup" /du "www.dguard.org" /n "Burlutsky Stanislav Andreevich" /fd sha1 "setup_DGuard.exe"
